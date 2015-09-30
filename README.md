@@ -3,7 +3,9 @@
 
 可多终端登录，一起画画，实时同步。
 
-### 克隆 demo
+### 本地运行
+首先确认本机已经安装Xcode 运行环境，然后执行,模拟器或者真机：
+
 ```
 git clone git@github.com:WildDogTeam/demo-ios-drawing.git
 cd  demo-ios-drawing
