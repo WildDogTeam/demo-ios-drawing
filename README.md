@@ -36,4 +36,4 @@ demo-ios-drawing is built on and with the aid of several  projects. We would lik
 
 Open Source:
 
-* [drawingdemo](https://github.com/firebase/ios-drawing) Real-time Drawing powered by Firebase
+* [drawingDemo](https://github.com/firebase/ios-drawing) Real-time Drawing powered by Firebase
