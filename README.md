@@ -1,5 +1,5 @@
 # demo-ios-drawing
-demo-ios-drawing是一个基于 Wilddog iOS SDK 开发的实时画图demo，可多终端登录来一起画画，同步显示图画效果。
+demo-ios-drawing是一个基于 Wilddog iOS SDK 开发的实时画图 demo，可多终端登录来一起画画，同步显示图画效果。
 
 ### 克隆 demo
 ```
