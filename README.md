@@ -4,6 +4,8 @@ demo-ios-drawing是一个基于 Wilddog iOS SDK 开发的实时画图 demo，可
 ### 本地运行
 首先确认本机已经安装Xcode 运行环境，然后执行,模拟器或者真机：
 
+### 克隆 demo
+
 ```
 git clone git@github.com:WildDogTeam/demo-ios-drawing.git
 cd  demo-ios-drawing
