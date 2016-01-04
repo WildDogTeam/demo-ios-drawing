@@ -1,0 +1,5 @@
+language: objective-c
+
+script:
+- xctool -project Drawing.xcodeproj -scheme Drawing -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+
