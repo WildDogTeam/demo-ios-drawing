@@ -24,6 +24,8 @@
 		28E824741B62468600EB306F /* nko_colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E824711B62468600EB306F /* nko_colormap.png */; };
 		391327461BB128E400DA26E5 /* Wilddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391327441BB128D600DA26E5 /* Wilddog.framework */; };
 		391327471BB128E400DA26E5 /* Wilddog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 391327441BB128D600DA26E5 /* Wilddog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		39F727021C5A1592003460F0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F727011C5A1592003460F0 /* JavaScriptCore.framework */; };
+		39F727041C5A1597003460F0 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F727031C5A1597003460F0 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		28E824701B62468600EB306F /* nko_brightness_guide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nko_brightness_guide@2x.png"; sourceTree = "<group>"; };
 		28E824711B62468600EB306F /* nko_colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nko_colormap.png; sourceTree = "<group>"; };
 		391327441BB128D600DA26E5 /* Wilddog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Wilddog.framework; sourceTree = "<group>"; };
+		39F727011C5A1592003460F0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		39F727031C5A1597003460F0 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F727041C5A1597003460F0 /* libsqlite3.0.tbd in Frameworks */,
+				39F727021C5A1592003460F0 /* JavaScriptCore.framework in Frameworks */,
 				391327461BB128E400DA26E5 /* Wilddog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +108,8 @@
 		28E824041B623D0E00EB306F = {
 			isa = PBXGroup;
 			children = (
+				39F727031C5A1597003460F0 /* libsqlite3.0.tbd */,
+				39F727011C5A1592003460F0 /* JavaScriptCore.framework */,
 				28E8240F1B623D0E00EB306F /* Drawing */,
 				28E824291B623D0E00EB306F /* DrawingTests */,
 				28E8240E1B623D0E00EB306F /* Products */,
