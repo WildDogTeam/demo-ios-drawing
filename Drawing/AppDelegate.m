@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "Wilddog.h"
+#import <Wilddog/Wilddog.h>
 #import "WDViewController.h"
 
 @interface AppDelegate ()
