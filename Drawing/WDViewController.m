@@ -8,7 +8,7 @@
 
 #import "WDViewController.h"
 
-#import <WildDog/Wilddog.h>
+#import "Wilddog.h"
 #import "WDDrawView.h"
 #import "WDColorPickController.h"
 

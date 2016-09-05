@@ -9,6 +9,7 @@ demo-ios-drawing是一个基于 Wilddog iOS SDK 开发的实时画图 demo，可
 ```
 git clone git@github.com:WildDogTeam/demo-ios-drawing.git
 cd  demo-ios-drawing
+pod install
 ```
 
 ### 注册 Wilddog

@@ -90,7 +90,7 @@
 + (WDPath *)parse:(NSDictionary *)dictionary
 {
     // parse a FDPath from a JSON representation
-    
+
     if (![dictionary[@"color"] isKindOfClass:[NSNumber class]]) {
         // no required value "color" found or wrong type, parsing failed
         return nil;
