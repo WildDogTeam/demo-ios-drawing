@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		392CAEA51D90DD9500F8F5E9 /* WilddogCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392CAEA41D90DD9500F8F5E9 /* WilddogCore.framework */; };
+		392CAEA71D90DD9C00F8F5E9 /* WilddogSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392CAEA61D90DD9C00F8F5E9 /* WilddogSync.framework */; };
+		39452EEC1D90D42500B06EC5 /* nko_brightness_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 39452EE61D90D42500B06EC5 /* nko_brightness_guide.png */; };
+		39452EED1D90D42500B06EC5 /* nko_brightness_guide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39452EE71D90D42500B06EC5 /* nko_brightness_guide@2x.png */; };
+		39452EEE1D90D42500B06EC5 /* nko_colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 39452EE81D90D42500B06EC5 /* nko_colormap.png */; };
+		39452EEF1D90D42500B06EC5 /* NKOColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39452EEA1D90D42500B06EC5 /* NKOColorPickerView.m */; };
+		39452EF01D90D42500B06EC5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 39452EEB1D90D42500B06EC5 /* README.md */; };
+		39452EF21D90D44A00B06EC5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 39452EF11D90D44A00B06EC5 /* libsqlite3.tbd */; };
+		39452EF41D90D45A00B06EC5 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39452EF31D90D45A00B06EC5 /* JavaScriptCore.framework */; };
+		395D479E1D8F8EBB009364DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 395D478E1D8F8EBB009364DB /* InfoPlist.strings */; };
+		395D479F1D8F8EBB009364DB /* FDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47911D8F8EBB009364DB /* FDAppDelegate.m */; };
+		395D47A01D8F8EBB009364DB /* FDColorPickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47931D8F8EBB009364DB /* FDColorPickController.m */; };
+		395D47A11D8F8EBB009364DB /* FDDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47951D8F8EBB009364DB /* FDDrawView.m */; };
+		395D47A21D8F8EBB009364DB /* FDPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47971D8F8EBB009364DB /* FDPath.m */; };
+		395D47A31D8F8EBB009364DB /* FDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47991D8F8EBB009364DB /* FDViewController.m */; };
+		395D47A41D8F8EBB009364DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395D479A1D8F8EBB009364DB /* Images.xcassets */; };
+		395D47A51D8F8EBB009364DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D479B1D8F8EBB009364DB /* main.m */; };
+		395D47A61D8F8EBB009364DB /* Wilddog Drawing-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 395D479C1D8F8EBB009364DB /* Wilddog Drawing-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB91C8CE199CEAA900AB077F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB91C89D199CEAA900AB077F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB91C8A4199CEAA900AB077F;
+			remoteInfo = "Firebase Drawing";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		392CAEA41D90DD9500F8F5E9 /* WilddogCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WilddogCore.framework; sourceTree = "<group>"; };
+		392CAEA61D90DD9C00F8F5E9 /* WilddogSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WilddogSync.framework; sourceTree = "<group>"; };
+		39452EE61D90D42500B06EC5 /* nko_brightness_guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nko_brightness_guide.png; sourceTree = "<group>"; };
+		39452EE71D90D42500B06EC5 /* nko_brightness_guide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nko_brightness_guide@2x.png"; sourceTree = "<group>"; };
+		39452EE81D90D42500B06EC5 /* nko_colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nko_colormap.png; sourceTree = "<group>"; };
+		39452EE91D90D42500B06EC5 /* NKOColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKOColorPickerView.h; sourceTree = "<group>"; };
+		39452EEA1D90D42500B06EC5 /* NKOColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKOColorPickerView.m; sourceTree = "<group>"; };
+		39452EEB1D90D42500B06EC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		39452EF11D90D44A00B06EC5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		39452EF31D90D45A00B06EC5 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		395D478F1D8F8EBB009364DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		395D47901D8F8EBB009364DB /* FDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAppDelegate.h; sourceTree = "<group>"; };
+		395D47911D8F8EBB009364DB /* FDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAppDelegate.m; sourceTree = "<group>"; };
+		395D47921D8F8EBB009364DB /* FDColorPickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDColorPickController.h; sourceTree = "<group>"; };
+		395D47931D8F8EBB009364DB /* FDColorPickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDColorPickController.m; sourceTree = "<group>"; };
+		395D47941D8F8EBB009364DB /* FDDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDrawView.h; sourceTree = "<group>"; };
+		395D47951D8F8EBB009364DB /* FDDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDrawView.m; sourceTree = "<group>"; };
+		395D47961D8F8EBB009364DB /* FDPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDPath.h; sourceTree = "<group>"; };
+		395D47971D8F8EBB009364DB /* FDPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDPath.m; sourceTree = "<group>"; };
+		395D47981D8F8EBB009364DB /* FDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDViewController.h; sourceTree = "<group>"; };
+		395D47991D8F8EBB009364DB /* FDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDViewController.m; sourceTree = "<group>"; };
+		395D479A1D8F8EBB009364DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		395D479B1D8F8EBB009364DB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		395D479C1D8F8EBB009364DB /* Wilddog Drawing-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Wilddog Drawing-Info.plist"; sourceTree = "<group>"; };
+		395D479D1D8F8EBB009364DB /* Wilddog Drawing-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Wilddog Drawing-Prefix.pch"; sourceTree = "<group>"; };
+		FB91C8A5199CEAA900AB077F /* Wilddog Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wilddog Drawing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB91C8C9199CEAA900AB077F /* Wilddog Drawing.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wilddog Drawing.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB91C8A2199CEAA900AB077F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392CAEA71D90DD9C00F8F5E9 /* WilddogSync.framework in Frameworks */,
+				392CAEA51D90DD9500F8F5E9 /* WilddogCore.framework in Frameworks */,
+				39452EF41D90D45A00B06EC5 /* JavaScriptCore.framework in Frameworks */,
+				39452EF21D90D44A00B06EC5 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB91C8C6199CEAA900AB077F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39452EE41D90D42500B06EC5 /* NKOColorPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				39452EE51D90D42500B06EC5 /* Assets */,
+				39452EE91D90D42500B06EC5 /* NKOColorPickerView.h */,
+				39452EEA1D90D42500B06EC5 /* NKOColorPickerView.m */,
+				39452EEB1D90D42500B06EC5 /* README.md */,
+			);
+			path = NKOColorPickerView;
+			sourceTree = "<group>";
+		};
+		39452EE51D90D42500B06EC5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				39452EE61D90D42500B06EC5 /* nko_brightness_guide.png */,
+				39452EE71D90D42500B06EC5 /* nko_brightness_guide@2x.png */,
+				39452EE81D90D42500B06EC5 /* nko_colormap.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		395D478D1D8F8EBB009364DB /* Wilddog Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				39452EE41D90D42500B06EC5 /* NKOColorPickerView */,
+				395D478E1D8F8EBB009364DB /* InfoPlist.strings */,
+				395D47901D8F8EBB009364DB /* FDAppDelegate.h */,
+				395D47911D8F8EBB009364DB /* FDAppDelegate.m */,
+				395D47921D8F8EBB009364DB /* FDColorPickController.h */,
+				395D47931D8F8EBB009364DB /* FDColorPickController.m */,
+				395D47941D8F8EBB009364DB /* FDDrawView.h */,
+				395D47951D8F8EBB009364DB /* FDDrawView.m */,
+				395D47961D8F8EBB009364DB /* FDPath.h */,
+				395D47971D8F8EBB009364DB /* FDPath.m */,
+				395D47981D8F8EBB009364DB /* FDViewController.h */,
+				395D47991D8F8EBB009364DB /* FDViewController.m */,
+				395D479A1D8F8EBB009364DB /* Images.xcassets */,
+				395D479B1D8F8EBB009364DB /* main.m */,
+				395D479C1D8F8EBB009364DB /* Wilddog Drawing-Info.plist */,
+				395D479D1D8F8EBB009364DB /* Wilddog Drawing-Prefix.pch */,
+			);
+			path = "Wilddog Drawing";
+			sourceTree = "<group>";
+		};
+		93B7CF88A58C4AF13587DE96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				392CAEA61D90DD9C00F8F5E9 /* WilddogSync.framework */,
+				392CAEA41D90DD9500F8F5E9 /* WilddogCore.framework */,
+				39452EF31D90D45A00B06EC5 /* JavaScriptCore.framework */,
+				39452EF11D90D44A00B06EC5 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB91C89C199CEAA900AB077F = {
+			isa = PBXGroup;
+			children = (
+				395D478D1D8F8EBB009364DB /* Wilddog Drawing */,
+				FB91C8A6199CEAA900AB077F /* Products */,
+				93B7CF88A58C4AF13587DE96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB91C8A6199CEAA900AB077F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB91C8A5199CEAA900AB077F /* Wilddog Drawing.app */,
+				FB91C8C9199CEAA900AB077F /* Wilddog Drawing.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB91C8A4199CEAA900AB077F /* Wilddog Drawing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB91C8DA199CEAA900AB077F /* Build configuration list for PBXNativeTarget "Wilddog Drawing" */;
+			buildPhases = (
+				FB91C8A1199CEAA900AB077F /* Sources */,
+				FB91C8A2199CEAA900AB077F /* Frameworks */,
+				FB91C8A3199CEAA900AB077F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wilddog Drawing";
+			productName = "Firebase Drawing";
+			productReference = FB91C8A5199CEAA900AB077F /* Wilddog Drawing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB91C8C8199CEAA900AB077F /* Wilddog DrawingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB91C8DD199CEAA900AB077F /* Build configuration list for PBXNativeTarget "Wilddog DrawingTests" */;
+			buildPhases = (
+				FB91C8C5199CEAA900AB077F /* Sources */,
+				FB91C8C6199CEAA900AB077F /* Frameworks */,
+				FB91C8C7199CEAA900AB077F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB91C8CF199CEAA900AB077F /* PBXTargetDependency */,
+			);
+			name = "Wilddog DrawingTests";
+			productName = "Firebase DrawingTests";
+			productReference = FB91C8C9199CEAA900AB077F /* Wilddog Drawing.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB91C89D199CEAA900AB077F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Firebase;
+				TargetAttributes = {
+					FB91C8C8199CEAA900AB077F = {
+						TestTargetID = FB91C8A4199CEAA900AB077F;
+					};
+				};
+			};
+			buildConfigurationList = FB91C8A0199CEAA900AB077F /* Build configuration list for PBXProject "Wilddog Drawing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB91C89C199CEAA900AB077F;
+			productRefGroup = FB91C8A6199CEAA900AB077F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB91C8A4199CEAA900AB077F /* Wilddog Drawing */,
+				FB91C8C8199CEAA900AB077F /* Wilddog DrawingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB91C8A3199CEAA900AB077F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39452EEC1D90D42500B06EC5 /* nko_brightness_guide.png in Resources */,
+				395D47A61D8F8EBB009364DB /* Wilddog Drawing-Info.plist in Resources */,
+				39452EED1D90D42500B06EC5 /* nko_brightness_guide@2x.png in Resources */,
+				39452EEE1D90D42500B06EC5 /* nko_colormap.png in Resources */,
+				395D479E1D8F8EBB009364DB /* InfoPlist.strings in Resources */,
+				395D47A41D8F8EBB009364DB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB91C8C7199CEAA900AB077F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB91C8A1199CEAA900AB077F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39452EEF1D90D42500B06EC5 /* NKOColorPickerView.m in Sources */,
+				395D47A11D8F8EBB009364DB /* FDDrawView.m in Sources */,
+				395D47A01D8F8EBB009364DB /* FDColorPickController.m in Sources */,
+				395D47A21D8F8EBB009364DB /* FDPath.m in Sources */,
+				395D479F1D8F8EBB009364DB /* FDAppDelegate.m in Sources */,
+				395D47A51D8F8EBB009364DB /* main.m in Sources */,
+				39452EF01D90D42500B06EC5 /* README.md in Sources */,
+				395D47A31D8F8EBB009364DB /* FDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB91C8C5199CEAA900AB077F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB91C8CF199CEAA900AB077F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB91C8A4199CEAA900AB077F /* Wilddog Drawing */;
+			targetProxy = FB91C8CE199CEAA900AB077F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		395D478E1D8F8EBB009364DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				395D478F1D8F8EBB009364DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB91C8D8199CEAA900AB077F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB91C8D9199CEAA900AB077F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB91C8DB199CEAA900AB077F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					Drawing,
+					"$(PROJECT_DIR)/Wilddog",
+					Drawing,
+					"$(PROJECT_DIR)/Wilddog",
+					Drawing,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wilddog Drawing/Wilddog Drawing-Prefix.pch";
+				INFOPLIST_FILE = "Wilddog Drawing/Wilddog Drawing-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "Wilddog Drawing";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FB91C8DC199CEAA900AB077F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					Drawing,
+					"$(PROJECT_DIR)/Wilddog",
+					Drawing,
+					"$(PROJECT_DIR)/Wilddog",
+					Drawing,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wilddog Drawing/Wilddog Drawing-Prefix.pch";
+				INFOPLIST_FILE = "Wilddog Drawing/Wilddog Drawing-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "Wilddog Drawing";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FB91C8DE199CEAA900AB077F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wilddog Drawing.app/Wilddog Drawing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wilddog Drawing/Wilddog Drawing-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Wilddog DrawingTests/Wilddog DrawingTests-Info.plist";
+				PRODUCT_NAME = "Wilddog Drawing";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FB91C8DF199CEAA900AB077F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wilddog Drawing.app/Wilddog Drawing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wilddog Drawing/Wilddog Drawing-Prefix.pch";
+				INFOPLIST_FILE = "Wilddog DrawingTests/Wilddog DrawingTests-Info.plist";
+				PRODUCT_NAME = "Wilddog Drawing";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB91C8A0199CEAA900AB077F /* Build configuration list for PBXProject "Wilddog Drawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB91C8D8199CEAA900AB077F /* Debug */,
+				FB91C8D9199CEAA900AB077F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB91C8DA199CEAA900AB077F /* Build configuration list for PBXNativeTarget "Wilddog Drawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB91C8DB199CEAA900AB077F /* Debug */,
+				FB91C8DC199CEAA900AB077F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB91C8DD199CEAA900AB077F /* Build configuration list for PBXNativeTarget "Wilddog DrawingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB91C8DE199CEAA900AB077F /* Debug */,
+				FB91C8DF199CEAA900AB077F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB91C89D199CEAA900AB077F /* Project object */;
+}
