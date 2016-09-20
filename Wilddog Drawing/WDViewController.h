@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#import "FDDrawView.h"
-#import "FDColorPickController.h"
+#import "WDDrawView.h"
+#import "WDColorPickController.h"
 
-@interface FDViewController : UIViewController<FDDrawViewDelegate, FDColorPickerDelegate>
+@interface WDViewController : UIViewController<FDDrawViewDelegate, FDColorPickerDelegate>
 
 @end

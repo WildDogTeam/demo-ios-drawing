@@ -7,18 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FDPath.h"
+#import "WDPath.h"
 
-@class FDDrawView;
+@class WDDrawView;
 
 @protocol FDDrawViewDelegate <NSObject>
 
 // called when a user finished drawing a line/path
-- (void)drawView:(FDDrawView *)view didFinishDrawingPath:(FDPath *)path;
+- (void)drawView:(WDDrawView *)view didFinishDrawingPath:(WDPath *)path;
 
 @end
 
-@interface FDDrawView : UIView
+@interface WDDrawView : UIView
 
 // the color that is used to draw lines
 @property (nonatomic, strong) UIColor *drawColor;
@@ -27,7 +27,7 @@
 @property (nonatomic, weak) id<FDDrawViewDelegate> delegate;
 
 // adds a path to display to this view
-- (void)addPath:(FDPath *)path;
+- (void)addPath:(WDPath *)path;
 
 
 @end

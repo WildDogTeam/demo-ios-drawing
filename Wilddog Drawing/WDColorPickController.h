@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class FDColorPickController;
+@class WDColorPickController;
 
 @protocol FDColorPickerDelegate <NSObject>
 
-- (void)colorPicker:(FDColorPickController *)colorPicker didPickColor:(UIColor *)color;
+- (void)colorPicker:(WDColorPickController *)colorPicker didPickColor:(UIColor *)color;
 
 @end
 
-@interface FDColorPickController : UIViewController
+@interface WDColorPickController : UIViewController
 
 @property (nonatomic, weak) id<FDColorPickerDelegate> delegate;
 

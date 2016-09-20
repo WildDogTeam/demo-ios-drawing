@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Wilddog. All rights reserved.
 //
 
-#import "FDPath.h"
+#import "WDPath.h"
 
-@interface FDPoint ()
+@interface WDPoint ()
 
 @property (nonatomic, readwrite) CGFloat x;
 @property (nonatomic, readwrite) CGFloat y;
 
 @end
 
-@implementation FDPoint
+@implementation WDPoint
 
 - (id)initWithCGPoint:(CGPoint)point
 {
@@ -27,7 +27,7 @@
     return self;
 }
 
-+ (FDPoint *)parse:(id)obj
++ (WDPoint *)parse:(id)obj
 {
     // parse a point from a JSON representation
     if (![obj isKindOfClass:[NSDictionary class]]) {
@@ -47,19 +47,19 @@
 
     // parse point into CGPoint and convert to FDPoint
     CGPoint point = CGPointMake([dictionary[@"x"] floatValue], [dictionary[@"y"] floatValue]);
-    return [[FDPoint alloc] initWithCGPoint:point];
+    return [[WDPoint alloc] initWithCGPoint:point];
 }
 
 @end
 
-@interface FDPath ()
+@interface WDPath ()
 
 @property (nonatomic, strong, readwrite) NSMutableArray *points;
 @property (nonatomic, strong, readwrite) UIColor *color;
 
 @end
 
-@implementation FDPath
+@implementation WDPath
 
 - (id)initWithColor:(UIColor *)color
 {
@@ -83,10 +83,10 @@
 
 - (void)addPoint:(CGPoint)point
 {
-    [self.points addObject:[[FDPoint alloc] initWithCGPoint:point]];
+    [self.points addObject:[[WDPoint alloc] initWithCGPoint:point]];
 }
 
-+ (FDPath *)parse:(NSDictionary *)dictionary
++ (WDPath *)parse:(NSDictionary *)dictionary
 {
     // parse a FDPath from a JSON representation
 
@@ -100,13 +100,13 @@
     }
 
     // parse the color into UIColor
-    UIColor *color = [FDPath parseColor:dictionary[@"color"]];
+    UIColor *color = [WDPath parseColor:dictionary[@"color"]];
 
     // parse the points into an array
     NSArray *rawPoints = dictionary[@"points"];
     NSMutableArray *points = [NSMutableArray array];
     for (id obj in rawPoints) {
-        FDPoint *point = [FDPoint parse:obj];
+        WDPoint *point = [WDPoint parse:obj];
         if (point != nil) {
             // parsing succeeded add to path
             [points addObject:point];
@@ -115,7 +115,7 @@
             NSLog(@"Not a valid point: %@", obj);
         }
     }
-    return [[FDPath alloc] initWithPoints:points color:color];
+    return [[WDPath alloc] initWithPoints:points color:color];
 }
 
 - (NSDictionary *)serialize
@@ -123,11 +123,11 @@
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
 
     // convert the color into it's JSON representation
-    dictionary[@"color"] = [FDPath serializeColor:self.color];
+    dictionary[@"color"] = [WDPath serializeColor:self.color];
 
     // add all points to the dictionary
     NSMutableArray *points = [NSMutableArray array];
-    for (FDPoint *point in self.points) {
+    for (WDPoint *point in self.points) {
         [points addObject:@{ @"x": [NSNumber numberWithInteger:point.x], @"y": [NSNumber numberWithInteger:point.y]}];
     }
     dictionary[@"points"] = points;

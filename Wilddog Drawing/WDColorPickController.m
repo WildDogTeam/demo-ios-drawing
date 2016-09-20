@@ -6,18 +6,18 @@
 //  Copyright (c) 2014 Wilddog. All rights reserved.
 //
 
-#import "FDColorPickController.h"
+#import "WDColorPickController.h"
 
 #import "NKOColorPickerView.h"
 
-@interface FDColorPickController ()
+@interface WDColorPickController ()
 
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, strong) NKOColorPickerView *colorPickerView;
 
 @end
 
-@implementation FDColorPickController
+@implementation WDColorPickController
 
 - (id)initWithColor:(UIColor *)color
 {

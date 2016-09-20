@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Wilddog. All rights reserved.
 //
 
-#import "FDViewController.h"
+#import "WDViewController.h"
 
 #import <WilddogSync/WilddogSync.h>
-#import "FDDrawView.h"
-#import "FDColorPickController.h"
+#import "WDDrawView.h"
+#import "WDColorPickController.h"
 
-@interface FDViewController ()
+@interface WDViewController ()
 
 // The Wilddog this demo uses
 @property (nonatomic, strong) WDGSyncReference *wilddog;
@@ -21,7 +21,7 @@
 @property (nonatomic, strong) NSMutableArray *paths;
 
 // A view the user can draw on
-@property (nonatomic, strong) FDDrawView *drawView;
+@property (nonatomic, strong) WDDrawView *drawView;
 
 // A button to choose a new color
 @property (nonatomic, strong) UIButton *colorButton;
@@ -34,7 +34,7 @@
 
 @end
 
-@implementation FDViewController
+@implementation WDViewController
 
 - (id)init
 {
@@ -48,7 +48,7 @@
         self.outstandingPaths = [NSMutableSet set];
 
         // get a weak reference so we don't cause any retain cycles in tha callback block
-        __weak FDViewController *weakSelf = self;
+        __weak WDViewController *weakSelf = self;
 
         // New drawings will appear as child added events
         self.childAddedHandle = [self.wilddog observeEventType:WDGDataEventTypeChildAdded withBlock:^(WDGDataSnapshot *snapshot) {
@@ -56,7 +56,7 @@
                 // this was drawn by this device and already taken care of by our draw view, ignore
             } else {
                 // parse the path into our internal format
-                FDPath *path = [FDPath parse:snapshot.value];
+                WDPath *path = [WDPath parse:snapshot.value];
                 if (path != nil) {
                     // the parse was successful, add it to our view
                     if (weakSelf.drawView != nil) {
@@ -83,7 +83,7 @@
 - (void)colorButtonPressed
 {
     // the user decided to choose a new color, present the color picker view controller modally
-    FDColorPickController *cpc = [[FDColorPickController alloc] initWithColor:self.drawView.drawColor];
+    WDColorPickController *cpc = [[WDColorPickController alloc] initWithColor:self.drawView.drawColor];
 
     // set the color picker delegate to self
     cpc.delegate = self;
@@ -95,13 +95,13 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (void)colorPicker:(FDColorPickController *)colorPicker didPickColor:(UIColor *)color
+- (void)colorPicker:(WDColorPickController *)colorPicker didPickColor:(UIColor *)color
 {
     // the user chose a new color, update the drawing view
     self.drawView.drawColor = color;
 }
 
-- (void)drawView:(FDDrawView *)view didFinishDrawingPath:(FDPath *)path
+- (void)drawView:(WDDrawView *)view didFinishDrawingPath:(WDPath *)path
 {
     // the user finished drawing a path
     WDGSyncReference *pathRef = [self.wilddog childByAutoId];
@@ -124,13 +124,13 @@
     // load and setup views
 
     // this is the main view and used to show drawing from other users and let the user draw
-    self.drawView = [[FDDrawView alloc] initWithFrame:CGRectMake(0, 0, 320, 400)];
+    self.drawView = [[WDDrawView alloc] initWithFrame:CGRectMake(0, 0, 320, 400)];
 
     // make sure it's resizable to fit any device size
     self.drawView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
     // add any paths that were already received from Wilddog
-    for (FDPath *path in self.paths) {
+    for (WDPath *path in self.paths) {
         [self.drawView addPath:path];
     }
 

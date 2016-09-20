@@ -6,22 +6,22 @@
 //  Copyright (c) 2014 Wilddog. All rights reserved.
 //
 
-#import "FDDrawView.h"
+#import "WDDrawView.h"
 
-@interface FDDrawView ()
+@interface WDDrawView ()
 
 // the paths currently displayed by this view
 @property (nonatomic, strong) NSMutableArray *paths;
 
 // the current path the user is drawing
-@property (nonatomic, strong) FDPath *currentPath;
+@property (nonatomic, strong) WDPath *currentPath;
 
 // the touch that is used to currently draw this path
 @property (nonatomic, strong) UITouch *currentTouch;
 
 @end
 
-@implementation FDDrawView
+@implementation WDDrawView
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -34,7 +34,7 @@
     return self;
 }
 
-- (void)addPath:(FDPath *)path
+- (void)addPath:(WDPath *)path
 {
     [self.paths addObject:path];
 
@@ -42,7 +42,7 @@
     [self setNeedsDisplay];
 }
 
-- (void)drawPath:(FDPath *)path withContext:(CGContextRef)context
+- (void)drawPath:(WDPath *)path withContext:(CGContextRef)context
 {
     if (path.points.count > 1) {
         // make sure this is a new line
@@ -51,12 +51,12 @@
         // set the color
         CGContextSetStrokeColorWithColor(context, path.color.CGColor);
 
-        FDPoint *point = path.points[0];
+        WDPoint *point = path.points[0];
         CGContextMoveToPoint(context, point.x, point.y);
 
         // draw all points on the path
         for (NSUInteger i = 0; i < path.points.count; i++) {
-            FDPoint *point = path.points[i];
+            WDPoint *point = path.points[i];
             CGContextAddLineToPoint(context, point.x, point.y);
         }
 
@@ -73,7 +73,7 @@
     CGContextSetLineWidth(context, 0.5f);
 
     // draw all lines from Wilddog
-    for (FDPath *path in self.paths) {
+    for (WDPath *path in self.paths) {
         [self drawPath:path withContext:context];
     }
 
@@ -91,7 +91,7 @@
 
         // remember the touch to not mix up multitouch
         self.currentTouch = [touches anyObject];
-        self.currentPath = [[FDPath alloc] initWithColor:self.drawColor];
+        self.currentPath = [[WDPath alloc] initWithColor:self.drawColor];
 
         // add the current point on the path
         CGPoint touchPoint = [self.currentTouch locationInView:self];

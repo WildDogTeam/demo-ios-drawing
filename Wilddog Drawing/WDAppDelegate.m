@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Wilddog. All rights reserved.
 //
 
-#import "FDAppDelegate.h"
+#import "WDAppDelegate.h"
 
-#import "FDViewController.h"
+#import "WDViewController.h"
 #import <WilddogCore/WilddogCore.h>
 #import <WilddogSync/WilddogSync.h>
 
 // Replace this with your own Wilddog
 static NSString * const kWilddogURL = @"https://draw.wilddogio.com";
 
-@implementation FDAppDelegate
+@implementation WDAppDelegate
 
 - (instancetype)init
 {
@@ -34,7 +34,7 @@ static NSString * const kWilddogURL = @"https://draw.wilddogio.com";
     WDGOptions *options = [[WDGOptions alloc] initWithSyncURL:kWilddogURL];
     [WDGApp configureWithOptions:options];
     
-    FDViewController *drawViewController = [[FDViewController alloc] init];
+    WDViewController *drawViewController = [[WDViewController alloc] init];
     self.window.rootViewController = drawViewController;
     [self.window makeKeyAndVisible];
     return YES;

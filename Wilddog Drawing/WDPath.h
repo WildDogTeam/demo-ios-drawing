@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 // a point object that can be stored in arrays
-@interface FDPoint : NSObject
+@interface WDPoint : NSObject
 
 @property (nonatomic, readonly) CGFloat x;
 @property (nonatomic, readonly) CGFloat y;
@@ -19,7 +19,7 @@
 @end
 
 // a path consisting of a color and multiple way points
-@interface FDPath : NSObject
+@interface WDPath : NSObject
 
 // the points of this path
 @property (nonatomic, strong, readonly) NSMutableArray *points;
@@ -31,7 +31,7 @@
 - (id)initWithPoints:(NSArray *)points color:(UIColor *)color;
 
 // parse from a JSON representation
-+ (FDPath *)parse:(NSDictionary *)dictionary;
++ (WDPath *)parse:(NSDictionary *)dictionary;
 
 // serialize to a JSON representation
 - (NSDictionary *)serialize;

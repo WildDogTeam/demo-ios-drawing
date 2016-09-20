@@ -17,11 +17,11 @@
 		39452EF21D90D44A00B06EC5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 39452EF11D90D44A00B06EC5 /* libsqlite3.tbd */; };
 		39452EF41D90D45A00B06EC5 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39452EF31D90D45A00B06EC5 /* JavaScriptCore.framework */; };
 		395D479E1D8F8EBB009364DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 395D478E1D8F8EBB009364DB /* InfoPlist.strings */; };
-		395D479F1D8F8EBB009364DB /* FDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47911D8F8EBB009364DB /* FDAppDelegate.m */; };
-		395D47A01D8F8EBB009364DB /* FDColorPickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47931D8F8EBB009364DB /* FDColorPickController.m */; };
-		395D47A11D8F8EBB009364DB /* FDDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47951D8F8EBB009364DB /* FDDrawView.m */; };
-		395D47A21D8F8EBB009364DB /* FDPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47971D8F8EBB009364DB /* FDPath.m */; };
-		395D47A31D8F8EBB009364DB /* FDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47991D8F8EBB009364DB /* FDViewController.m */; };
+		395D479F1D8F8EBB009364DB /* WDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47911D8F8EBB009364DB /* WDAppDelegate.m */; };
+		395D47A01D8F8EBB009364DB /* WDColorPickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47931D8F8EBB009364DB /* WDColorPickController.m */; };
+		395D47A11D8F8EBB009364DB /* WDDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47951D8F8EBB009364DB /* WDDrawView.m */; };
+		395D47A21D8F8EBB009364DB /* WDPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47971D8F8EBB009364DB /* WDPath.m */; };
+		395D47A31D8F8EBB009364DB /* WDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D47991D8F8EBB009364DB /* WDViewController.m */; };
 		395D47A41D8F8EBB009364DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395D479A1D8F8EBB009364DB /* Images.xcassets */; };
 		395D47A51D8F8EBB009364DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D479B1D8F8EBB009364DB /* main.m */; };
 		395D47A61D8F8EBB009364DB /* Wilddog Drawing-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 395D479C1D8F8EBB009364DB /* Wilddog Drawing-Info.plist */; };
@@ -49,16 +49,16 @@
 		39452EF11D90D44A00B06EC5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		39452EF31D90D45A00B06EC5 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		395D478F1D8F8EBB009364DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		395D47901D8F8EBB009364DB /* FDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAppDelegate.h; sourceTree = "<group>"; };
-		395D47911D8F8EBB009364DB /* FDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAppDelegate.m; sourceTree = "<group>"; };
-		395D47921D8F8EBB009364DB /* FDColorPickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDColorPickController.h; sourceTree = "<group>"; };
-		395D47931D8F8EBB009364DB /* FDColorPickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDColorPickController.m; sourceTree = "<group>"; };
-		395D47941D8F8EBB009364DB /* FDDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDrawView.h; sourceTree = "<group>"; };
-		395D47951D8F8EBB009364DB /* FDDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDrawView.m; sourceTree = "<group>"; };
-		395D47961D8F8EBB009364DB /* FDPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDPath.h; sourceTree = "<group>"; };
-		395D47971D8F8EBB009364DB /* FDPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDPath.m; sourceTree = "<group>"; };
-		395D47981D8F8EBB009364DB /* FDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDViewController.h; sourceTree = "<group>"; };
-		395D47991D8F8EBB009364DB /* FDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDViewController.m; sourceTree = "<group>"; };
+		395D47901D8F8EBB009364DB /* WDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDAppDelegate.h; sourceTree = "<group>"; };
+		395D47911D8F8EBB009364DB /* WDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDAppDelegate.m; sourceTree = "<group>"; };
+		395D47921D8F8EBB009364DB /* WDColorPickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDColorPickController.h; sourceTree = "<group>"; };
+		395D47931D8F8EBB009364DB /* WDColorPickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDColorPickController.m; sourceTree = "<group>"; };
+		395D47941D8F8EBB009364DB /* WDDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDrawView.h; sourceTree = "<group>"; };
+		395D47951D8F8EBB009364DB /* WDDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDrawView.m; sourceTree = "<group>"; };
+		395D47961D8F8EBB009364DB /* WDPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPath.h; sourceTree = "<group>"; };
+		395D47971D8F8EBB009364DB /* WDPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPath.m; sourceTree = "<group>"; };
+		395D47981D8F8EBB009364DB /* WDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDViewController.h; sourceTree = "<group>"; };
+		395D47991D8F8EBB009364DB /* WDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDViewController.m; sourceTree = "<group>"; };
 		395D479A1D8F8EBB009364DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		395D479B1D8F8EBB009364DB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		395D479C1D8F8EBB009364DB /* Wilddog Drawing-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Wilddog Drawing-Info.plist"; sourceTree = "<group>"; };
@@ -115,16 +115,16 @@
 			children = (
 				39452EE41D90D42500B06EC5 /* NKOColorPickerView */,
 				395D478E1D8F8EBB009364DB /* InfoPlist.strings */,
-				395D47901D8F8EBB009364DB /* FDAppDelegate.h */,
-				395D47911D8F8EBB009364DB /* FDAppDelegate.m */,
-				395D47921D8F8EBB009364DB /* FDColorPickController.h */,
-				395D47931D8F8EBB009364DB /* FDColorPickController.m */,
-				395D47941D8F8EBB009364DB /* FDDrawView.h */,
-				395D47951D8F8EBB009364DB /* FDDrawView.m */,
-				395D47961D8F8EBB009364DB /* FDPath.h */,
-				395D47971D8F8EBB009364DB /* FDPath.m */,
-				395D47981D8F8EBB009364DB /* FDViewController.h */,
-				395D47991D8F8EBB009364DB /* FDViewController.m */,
+				395D47901D8F8EBB009364DB /* WDAppDelegate.h */,
+				395D47911D8F8EBB009364DB /* WDAppDelegate.m */,
+				395D47921D8F8EBB009364DB /* WDColorPickController.h */,
+				395D47931D8F8EBB009364DB /* WDColorPickController.m */,
+				395D47941D8F8EBB009364DB /* WDDrawView.h */,
+				395D47951D8F8EBB009364DB /* WDDrawView.m */,
+				395D47961D8F8EBB009364DB /* WDPath.h */,
+				395D47971D8F8EBB009364DB /* WDPath.m */,
+				395D47981D8F8EBB009364DB /* WDViewController.h */,
+				395D47991D8F8EBB009364DB /* WDViewController.m */,
 				395D479A1D8F8EBB009364DB /* Images.xcassets */,
 				395D479B1D8F8EBB009364DB /* main.m */,
 				395D479C1D8F8EBB009364DB /* Wilddog Drawing-Info.plist */,
@@ -263,13 +263,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				39452EEF1D90D42500B06EC5 /* NKOColorPickerView.m in Sources */,
-				395D47A11D8F8EBB009364DB /* FDDrawView.m in Sources */,
-				395D47A01D8F8EBB009364DB /* FDColorPickController.m in Sources */,
-				395D47A21D8F8EBB009364DB /* FDPath.m in Sources */,
-				395D479F1D8F8EBB009364DB /* FDAppDelegate.m in Sources */,
+				395D47A11D8F8EBB009364DB /* WDDrawView.m in Sources */,
+				395D47A01D8F8EBB009364DB /* WDColorPickController.m in Sources */,
+				395D47A21D8F8EBB009364DB /* WDPath.m in Sources */,
+				395D479F1D8F8EBB009364DB /* WDAppDelegate.m in Sources */,
 				395D47A51D8F8EBB009364DB /* main.m in Sources */,
 				39452EF01D90D42500B06EC5 /* README.md in Sources */,
-				395D47A31D8F8EBB009364DB /* FDViewController.m in Sources */,
+				395D47A31D8F8EBB009364DB /* WDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
